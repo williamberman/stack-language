@@ -7,7 +7,7 @@
 
 (define (x-read-syntax path port)
   (define the-arguments (format-datums '~a (port->lines port)))
-  (define the-module `(module stacker-module "expander.rkt" (stack-program ,@the-arguments)))
+  (define the-module `(module stacker-module stack-language/lang/expander (stack-program ,@the-arguments)))
   (define the-syntax (datum->syntax #f the-module))
   the-syntax)
 
