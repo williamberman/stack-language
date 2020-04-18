@@ -1,8 +1,8 @@
 Example racket language for personal reference.
 
 ```
-git clone < url >
-cd < directory >
+git clone https://github.com/williamberman/stack-language.git
+cd stack-language
 raco pkg install
 ```
 
@@ -18,7 +18,7 @@ Run from a file, racket <filename>
 => '(4)
 
 Run a repl.
-This doesn't work, but a repl can be started from a file with the `#lang stack-language` from
+The `racket -I` command doesn't work at the moment, but a repl can be started from a file with `#lang stack-language` from
 racket-mode or DrRacket.
 ```
 racket -I stack-language
