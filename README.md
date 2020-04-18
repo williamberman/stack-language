@@ -17,7 +17,9 @@ Run from a file, racket <filename>
 ```
 => '(4)
 
-Run a repl
+Run a repl.
+This doesn't work, but a repl can be started from a file with the `#lang stack-language` from
+racket-mode or DrRacket.
 ```
 racket -I stack-language
 '()
